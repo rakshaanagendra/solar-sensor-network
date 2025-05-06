@@ -7,7 +7,7 @@ from datetime import datetime
 # Setup serial connection (adjust port as needed)
 ser = serial.Serial('/dev/ttyUSB0', 9600)
 
-# Open CSV file for appending data
+# Open CSV file for adding data
 with open('sensor_data.csv', 'a', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['Timestamp', 'Temperature (°C)', 'Humidity (%)'])  # Header
